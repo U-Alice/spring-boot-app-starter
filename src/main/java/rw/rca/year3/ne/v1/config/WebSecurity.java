@@ -69,9 +69,6 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers("/" +
                                 "",
                         "/api/v1/users/admin/register",
-                        "/api/v1/users/accStaff/register",
-                        "/api/v1/location-address/**/**/**",
-                        "/api/v1/head-teachers/create",
                         "/favicon.ico",
                         "/**/*.png",
                         "/**/*.gif",
@@ -91,8 +88,6 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                         "/configuration/ui",
                         "/swagger-resources/**",
                         "/configuration/security",
-                        "/api/v1/education-level/sub-categories/{levelId}",
-                        "/api/v1/education-level",
                         "/swagger-ui.html",
                         "/webjars/**"
                 ).permitAll()
